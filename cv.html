@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>CV Ever Sebastian Perez Reyes</title>
+    <!-- Importación de Montserrat: fuente que iguala el estilo geométrico de la imagen -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos base para simular papel A4 */
+        body {
+            background-color: #525659;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            color: #1a1a1a;
+        }
+
+        .page {
+            width: 210mm;
+            height: 297mm;
+            padding: 15mm 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        /* Tipografía y Títulos */
+        h1 {
+            font-weight: 900;
+            font-size: 38pt;
+            line-height: 0.9;
+            margin: 0;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-weight: 800;
+            font-size: 22pt;
+            margin: 0 0 15pt 0;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-weight: 800;
+            font-size: 13pt;
+            margin: 0;
+        }
+
+        .subtitle {
+            font-weight: 700;
+            font-size: 14pt;
+            margin-top: 15pt;
+            letter-spacing: 1px;
+        }
+
+        /* Encabezado */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30pt;
+        }
+
+        .contact-info {
+            text-align: left;
+            padding-top: 10pt;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12pt;
+            font-size: 11pt;
+            font-weight: 700;
+        }
+
+        /* Referencia a carpeta CV para iconos */
+        .icon {
+            width: 28px;
+            height: 28px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+
+        /* Resumen */
+        .profile-summary {
+            font-size: 10.5pt;
+            line-height: 1.5;
+            margin-bottom: 25pt;
+            text-align: justify;
+        }
+
+        /* Separadores gruesos iguales a la imagen */
+        .divider {
+            border: 0;
+            border-top: 4px solid #4a4a4a;
+            margin: 20pt 0;
+        }
+
+        /* Columnas de Educación y Habilidades */
+        .columns {
+            display: flex;
+            gap: 60px;
+        }
+
+        .col-left { width: 55%; }
+        .col-right { width: 45%; }
+
+        .item-group {
+            margin-bottom: 18pt;
+        }
+
+        .date {
+            font-size: 10pt;
+            font-weight: 700;
+            margin-bottom: 2pt;
+        }
+
+        .degree {
+            font-size: 10.5pt;
+            margin-top: 2pt;
+        }
+
+        /* Habilidades */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            font-size: 11pt;
+            margin-bottom: 10pt;
+            display: flex;
+            align-items: center;
+        }
+
+        .skills-list li::before {
+            content: "•";
+            font-weight: bold;
+            font-size: 18pt;
+            margin-right: 10px;
+        }
+
+        /* Experiencia Laboral */
+        .exp-item {
+            margin-bottom: 22pt;
+        }
+
+        .company-info {
+            font-weight: 700;
+            font-size: 10.5pt;
+            margin: 3pt 0;
+        }
+
+        .description {
+            font-size: 10pt;
+            line-height: 1.4;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="page">
+    
+    <!-- ENCABEZADO -->
+    <div class="header">
+        <div>
+            <h1>EVER<br>SEBASTIAN<br>PEREZ REYES</h1>
+            <p class="subtitle">LIC. EN DISEÑO DE MODAS</p>
+        </div>
+        <div class="contact-info">
+            <div class="contact-item">
+                <img src="CV/telefono.png" class="icon" alt="Tel">
+                7122376747
+            </div>
+            <div class="contact-item">
+                <img src="CV/email.png" class="icon" alt="Email">
+                aztecky.7@gmail.com
+            </div>
+            <div class="contact-item">
+                <img src="CV/ubicacion.png" class="icon" alt="Loc">
+                Calle Ignacio Zaragoza
+            </div>
+        </div>
+    </div>
+
+    <!-- RESUMEN -->
+    <div class="profile-summary">
+        Soy una persona proactiva, organizada y responsable, con excelentes relaciones interpersonales. Con 5 años de experiencia en el rubro, me destaco por el buen trabajo en equipo, la rápida toma de decisiones y el buen manejo de la presión. Busco un puesto de trabajo dinámico y desafiante para continuar desarrollando mi carrera.
+    </div>
+
+    <hr class="divider">
+
+    <!-- SECCIÓN INTERMEDIA: EDUCACIÓN Y HABILIDADES -->
+    <div class="columns">
+        <div class="col-left">
+            <h2>EDUCACIÓN</h2>
+            <div class="item-group">
+                <p class="date">2009 - 2014</p>
+                <h3>Universidad Increíble</h3>
+                <p class="degree">Lic. en Diseño de Modas</p>
+            </div>
+            <div class="item-group">
+                <p class="date">2026 - 2030</p>
+                <h3>Colegio Secundario Increíble</h3>
+                <p class="degree">Bachiller en Bienes y Servicios</p>
+            </div>
+        </div>
+        <div class="col-right">
+            <h2>HABILIDADES</h2>
+            <ul class="skills-list">
+                <li>Manejo de paquete informático</li>
+                <li>Software de administración avanzado</li>
+                <li>Software de diseño avanzado</li>
+                <li>Manejo integral de Redes Sociales</li>
+                <li>Idioma Inglés Avanzado</li>
+            </ul>
+        </div>
+    </div>
+
+    <hr class="divider">
+
+    <!-- EXPERIENCIA LABORAL -->
+    <div class="experience">
+        <h2>EXPERIENCIA LABORAL</h2>
+        
+        <div class="exp-item">
+            <h3>Asistente de Gerencia</h3>
+            <p class="company-info">Empresa Increíble, Ago 2028 - Presente</p>
+            <p class="description">Asistencia administrativa integral a Gerencia. Seguimiento de Agenda. Revisión de Idoneidad de documentos y control de archivo. Creación de Presentaciones mensuales.</p>
+        </div>
+
+        <div class="exp-item">
+            <h3>Asistente Administrativo</h3>
+            <p class="company-info">Empresa Increíble, Ene 2016 - Jul 2017</p>
+            <p class="description">Recepción de Clientes. Manejo de Conmutador. Asistencia a mesa de entradas. Organización de libro de entrada y salida. Mantenimiento de archivo. Preparación de Informes semanales.</p>
+        </div>
+
+        <div class="exp-item">
+            <h3>Pasante Administrativo</h3>
+            <p class="company-info">Empresa Increíble, Ene 2028 - 2031</p>
+            <p class="description">Recepción de Clientes. Manejo de Conmutador. Asistencia a mesa de entradas. Organización de libro de entrada y salida y salida. Mantenimiento de archivo. Preparación de Informes semanales.</p>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
